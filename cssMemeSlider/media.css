@@ -1,0 +1,16 @@
+@media (min-width: 500px) and (max-width: 768px) {
+    .form-buttom {
+        flex-direction: column-reverse;
+    }
+
+    .button-wrapper {
+        justify-content: center;
+        margin-top: 0rem;
+        margin-right: auto;
+        margin-bottom: 1.56rem;
+    }
+
+    .text-wrapper {
+        margin-bottom: 1.2rem;
+    }
+}
