@@ -8,36 +8,41 @@
     <title>cssMemeSlider</title>
 </head>
 <body>
-    <div class="container">
-        <section class="slider-section">
-            <div class="slider-wrapper">
-                <div class="slider">
-                  <img src="./img/image1.png" alt="">
-                  <img src="./img/image2.png" alt="">
-                  <img src="./img/image3.png" alt="">
-                  <img src="./img/image4.png" alt="">
-                </div>
-                <div class="form-buttom">
-                  <div class="text-wrapper">
-                    <p class="slider-text">Выпьем за Cross-Check &#10084;</p>
-                  </div>
-                  <div class="button-wrapper">
-                      <div class="transparent-container">
-                        <button type="button" class="btn active" data-slide-index="0"></button>
-                      </div>
-                      <div class="transparent-container">
-                        <button type="button" class="btn" data-slide-index="1"></button>
-                      </div>
-                      <div class="transparent-container">
-                        <button type="button" class="btn" data-slide-index="2"></button>
-                      </div>
-                      <div class="transparent-container">
-                        <button type="button" class="btn" data-slide-index="3"></button>
-                      </div>
-                  </div>
-                </div>
-            </div>
-        </section>
-    </div>
+  <div class="container">
+    <section class="slider-section">
+      <div class="slider">
+        <img src="./img/image1.png" id="slide1" alt="">
+        <img src="./img/image2.png" id="slide2" alt="">
+        <img src="./img/image3.png" id="slide3" alt="">
+        <img src="./img/image4.png" id="slide4" alt="">
+      </div>
+      <div class="form-button">
+        <div class="text-container">
+          <div class="text-wrapper">
+            <p class="slider-text" text-index="0">Выпьем за Cross-Check &#10084;</p>
+            <!-- <p class="slider-text" text-index="1">Выпьем за Cross-Check</p>
+            <p class="slider-text" text-index="2">Выпьем за Cross-Check</p>
+            <p class="slider-text" text-index="3">Выпьем за Cross-Check</p> -->
+          </div>
+        </div>
+        <div class="btn-container">
+          <div class="button-wrapper">
+            <label class="transparent-container">
+              <input type="radio" class="btn" name="slide" id="btn1" checked>
+            </label>
+            <label class="transparent-container">
+              <input type="radio" class="btn" name="slide" id="btn2">
+            </label>
+            <label class="transparent-container">
+              <input type="radio" class="btn" name="slide" id="btn3">
+            </label>
+            <label class="transparent-container">
+              <input type="radio" class="btn" name="slide" id="btn4">
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
 </html>

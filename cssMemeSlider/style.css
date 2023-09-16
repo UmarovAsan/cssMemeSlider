@@ -5,52 +5,64 @@
   }
 
 .container {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
 }
 
 .slider-section {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
     padding: 2rem 2rem;
     background-color: dimgray;
-}
-
-.slider-wrapper {
-    margin: auto;
+    row-gap: 2%;
 }
 
 .slider {
     display: flex;
-    max-width: 39.62rem;
-    height: 25rem;
+    width: 100%;
+    height: 81%;
     margin: 0 auto;
+    align-items: center;
     overflow: hidden;
 }
 
 img {
     width: 100%;
-    height: 100%;
+    /* max-width: 60rem; */
+    height: auto;
     object-fit: cover;
+    /* display: none; */
+    z-index: 3;
 }
 
-.form-buttom {
+#slide1:checked ~ .slider #slide1,
+#slide2:checked ~ .slider #slide2,
+#slide3:checked ~ .slider #slide3,
+#slide4:checked ~ .slider #slide4 {
+  display: block;
+}
+
+.form-button {
+    width: 100%;
+    height: 19%;
     display: flex;
-    max-width: 39.62rem;
-    height: 8rem;
-    margin: 0 auto;
-    padding-top: 1.56rem;
+    justify-content: space-between;
+}
+
+.text-container {
+    width: 80%;
+    height: 100%;
 }
 
 .text-wrapper {
     display: flex;
     width: max-content;
     height: 1.87rem;
-    margin-left: 0rem;
-    margin-right: 14rem;
+    overflow: hidden;
     align-items: center;
+    margin-left: 0;
 }
 
 .slider-text {
@@ -62,6 +74,11 @@ img {
     line-height: normal;
     text-align: center;
     white-space: nowrap;
+}
+
+.btn-container {
+    width: 20%;
+    height: 100%;
 }
 
 .button-wrapper {
@@ -89,8 +106,16 @@ img {
     border-radius: 50%;
     align-items: center;
     background: blue;
+    border-color: blue;
     border: none;
     outline: none;
     cursor: pointer;
-    margin: auto;
+}
+
+/* Установите стили для активной кнопки */
+#btn1:checked ~ .btn-container #btn1,
+#btn2:checked ~ .btn-container #btn2,
+#btn3:checked ~ .btn-container #btn3,
+#btn4:checked ~ .btn-container #btn4 {
+  background: red; /* Измените цвет на ваш выбор */
 }

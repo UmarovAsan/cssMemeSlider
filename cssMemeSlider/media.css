@@ -1,16 +1,29 @@
-@media (min-width: 500px) and (max-width: 768px) {
+/* @media (min-width: 500px) and (max-width: 768px) {
     .form-buttom {
         flex-direction: column-reverse;
+        margin-top: 0;
+        gap: 10%;
     }
 
-    .button-wrapper {
+    .btn-container {
+        display: flex;
         justify-content: center;
-        margin-top: 0rem;
-        margin-right: auto;
-        margin-bottom: 1.56rem;
+        height: 30.1%;
+        width: 100%;
+        align-items: center;
     }
+    
+    .button-wrapper {
+        margin: 0 auto;
+    }
+
 
     .text-wrapper {
-        margin-bottom: 1.2rem;
+        width: 100%;
+        flex: 1;
     }
-}
+
+    .slider-text {
+        font-size: 1.25rem;
+    }
+} */
