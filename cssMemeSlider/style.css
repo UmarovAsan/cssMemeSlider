@@ -6,7 +6,6 @@
 
 .container {
     width: 100vw;
-    height: 100vh;
 }
 
 .slider-section {
@@ -21,81 +20,12 @@
 
 .slider {
     display: flex;
-    width: 100%;
+    max-width: 60rem;
     height: 81%;
     margin: 0 auto;
     align-items: center;
     overflow: hidden;
-}
-
-img {
-    width: 100%;
-    /* max-width: 60rem; */
-    height: auto;
-    object-fit: cover;
-    /* display: none; */
-    z-index: 3;
-}
-
-#slide1:checked ~ .slider #slide1,
-#slide2:checked ~ .slider #slide2,
-#slide3:checked ~ .slider #slide3,
-#slide4:checked ~ .slider #slide4 {
-  display: block;
-}
-
-.form-button {
-    width: 100%;
-    height: 19%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.text-container {
-    width: 80%;
-    height: 100%;
-}
-
-.text-wrapper {
-    display: flex;
-    width: max-content;
-    height: 1.87rem;
-    overflow: hidden;
-    align-items: center;
-    margin-left: 0;
-}
-
-.slider-text {
-    color: #fff;
-    font-family: Inter;
-    font-size: 1.56rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: center;
-    white-space: nowrap;
-}
-
-.btn-container {
-    width: 20%;
-    height: 100%;
-}
-
-.button-wrapper {
-    display: flex;
-    width: 6.5rem;
-    height: 1.87rem;
-    margin-right: 0rem;
-    align-items: center;
-}
-
-.transparent-container {
-    display: flex;
-    width: 1.62rem;
-    height: 1.62rem;
-    border: none;
-    outline: none;
-    align-items: center;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn {
@@ -110,12 +40,136 @@ img {
     border: none;
     outline: none;
     cursor: pointer;
+    display: none;
 }
 
-/* Установите стили для активной кнопки */
-#btn1:checked ~ .btn-container #btn1,
-#btn2:checked ~ .btn-container #btn2,
-#btn3:checked ~ .btn-container #btn3,
-#btn4:checked ~ .btn-container #btn4 {
-  background: red; /* Измените цвет на ваш выбор */
+img {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-button {
+    width: 100%;
+    height: 19%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-wrapper {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    align-items: flex-start;
+}
+
+.slider-text1,
+.slider-text2,
+.slider-text3,
+.slider-text4 {
+    display: flex;
+    max-width: 100%;
+    height: 1.87rem;
+    align-items: center;
+    color: #fff;
+    font-family: Inter;
+    font-size: 1.56rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: nowrap;
+    transition: all 0.3s ease-in-out;
+}
+
+.slider-text1 {
+    margin-left: 0;
+}
+
+.button-wrapper {
+    max-width: 6.5rem;
+    display: flex;
+    align-items: flex-start;
+    margin-right: 0;
+    gap: 0.8rem;
+}
+
+.btn-label {
+    display: flex;
+    width: 1rem;
+    height: 1rem;
+    padding: 0.31rem 0.31rem;
+    border-radius: 50%;
+    background: blue;
+    border: solid 0.125rem blue;
+    outline: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#btn1:checked ~ .slide1 {
+    transform: translateX(0);
+}
+
+#btn2:checked ~ .slide2 {
+    transform: translateX(-100%);
+}
+
+#btn3:checked ~ .slide3 {
+    transform: translateX(-200%);
+}
+
+#btn4:checked ~ .slide4 {
+    transform: translateX(-300%);
+}
+
+
+#btn1:checked ~ .form-button .text-wrapper .slider-text1 {
+    transform: translateX(0);
+}
+
+#btn2:checked ~ .form-button .text-wrapper .slider-text2 {
+    transform: translateX(-100%);
+}
+
+#btn3:checked ~ .form-button .text-wrapper .slider-text3 {
+    transform: translateX(-200%);
+}
+
+#btn4:checked ~ .form-button .text-wrapper .slider-text4 {
+    transform: translateX(-300%);
+}
+
+.button-wrapper label:hover {
+    background: #fff;
+    border: solid 0.125rem #fff;
+    transition: all 0.15s ease-in-out;
+}
+
+.button-wrapper label:active {
+    background: dimgray;
+    border: solid 0.125rem #fff;
+    transition: all 0.15s ease-in-out;
+}
+
+.button-wrapper label:checked {
+    background: dimgray;
+    border: solid 0.125rem blue;
+    transition: all 0.15s ease-in-out;
+}
+
+.button-wrapper label:focus {
+    background: dimgray;
+    border: solid 0.125rem blue;
+    transition: all 0.15s ease-in-out;
+}
+
+.btn-label:checked {
+    background: dimgray;
+    border: solid 0.125rem blue;
 }

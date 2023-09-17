@@ -11,35 +11,28 @@
   <div class="container">
     <section class="slider-section">
       <div class="slider">
-        <img src="./img/image1.png" id="slide1" alt="">
-        <img src="./img/image2.png" id="slide2" alt="">
-        <img src="./img/image3.png" id="slide3" alt="">
-        <img src="./img/image4.png" id="slide4" alt="">
+        <input type="radio" class="btn" name="slide" id="btn1" checked>
+        <input type="radio" class="btn" name="slide" id="btn2">
+        <input type="radio" class="btn" name="slide" id="btn3">
+        <input type="radio" class="btn" name="slide" id="btn4">
+
+        <img src="./img/image1.png" class="slide1" alt="img1">
+        <img src="./img/image2.png" class="slide2" alt="img2">
+        <img src="./img/image3.jpg" class="slide3" alt="img3">
+        <img src="./img/image4.png" class="slide4" alt="img4">
       </div>
       <div class="form-button">
-        <div class="text-container">
-          <div class="text-wrapper">
-            <p class="slider-text" text-index="0">Выпьем за Cross-Check &#10084;</p>
-            <!-- <p class="slider-text" text-index="1">Выпьем за Cross-Check</p>
-            <p class="slider-text" text-index="2">Выпьем за Cross-Check</p>
-            <p class="slider-text" text-index="3">Выпьем за Cross-Check</p> -->
-          </div>
+        <div class="text-wrapper">
+          <p class="slider-text1" id="slider-text1">Выпьем за Cross-Check &#10084;</p>
+          <p class="slider-text2" id="slider-text2">Последний день до дедлайна</p>
+          <p class="slider-text3" id="slider-text3">Не засабмитил таск и ждешь когда тебя проверят</p>
+          <p class="slider-text4" id="slider-text4">Когда обновили ТЗ, а ты не вкурсе.</p>
         </div>
-        <div class="btn-container">
-          <div class="button-wrapper">
-            <label class="transparent-container">
-              <input type="radio" class="btn" name="slide" id="btn1" checked>
-            </label>
-            <label class="transparent-container">
-              <input type="radio" class="btn" name="slide" id="btn2">
-            </label>
-            <label class="transparent-container">
-              <input type="radio" class="btn" name="slide" id="btn3">
-            </label>
-            <label class="transparent-container">
-              <input type="radio" class="btn" name="slide" id="btn4">
-            </label>
-          </div>
+        <div class="button-wrapper">
+          <label for="btn1" class="btn-label"></label>
+          <label for="btn2" class="btn-label"></label>
+          <label for="btn3" class="btn-label"></label>
+          <label for="btn4" class="btn-label"></label>
         </div>
       </div>
     </section>
