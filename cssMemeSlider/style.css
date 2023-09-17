@@ -162,8 +162,3 @@ img {
     border: solid 0.125rem blue;
     transition: all 0.15s ease-in-out;
 }
-
-.btn-label:checked {
-    background: dimgray;
-    border: solid 0.125rem blue;
-}
